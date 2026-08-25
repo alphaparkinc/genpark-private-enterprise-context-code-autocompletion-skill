@@ -1,0 +1,38 @@
+{
+  "name": "genpark-private-enterprise-context-code-autocompletion-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Private air-gapped enterprise code autocompletion engine delivering sub-20ms multi-line predictions with zero data retention.",
+  "author": "genpark",
+  "category": "code-completion",
+  "tags": [
+    "code-autocompletion",
+    "tabnine-ai",
+    "private-llm",
+    "air-gapped-security",
+    "enterprise-code"
+  ],
+  "inputs": {
+    "local_ast_context": {
+      "type": "string"
+    },
+    "air_gapped_security_mode": {
+      "type": "boolean"
+    }
+  },
+  "outputs": {
+    "completion_id": {
+      "type": "string"
+    },
+    "prediction_latency_ms": {
+      "type": "integer"
+    },
+    "predicted_code_block": {
+      "type": "string"
+    },
+    "zero_data_retention_verified": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
